@@ -1,0 +1,73 @@
+﻿<Page x:Class="ChessModule.Windows.ProfilePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Background="#EAF1F8">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid x:Name="RootGrid" MinHeight="720" Margin="30">
+            <Border Background="#D7E3F1"
+                    CornerRadius="24"
+                    Padding="35"
+                    Width="720"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+
+                <StackPanel>
+                    <TextBlock Text="Профиль игрока"
+                               FontSize="34"
+                               FontWeight="Bold"
+                               Foreground="#243B55"
+                               HorizontalAlignment="Center"
+                               Margin="0,0,0,25"/>
+
+                    <TextBlock x:Name="UsernameText"
+                               FontSize="24"
+                               FontWeight="SemiBold"
+                               Foreground="#243B55"
+                               TextAlignment="Center"
+                               Margin="0,0,0,20"/>
+
+                    <Border Background="White"
+                            CornerRadius="14"
+                            Padding="22"
+                            Margin="0,0,0,20">
+                        <StackPanel>
+                            <TextBlock Text="Игровая статистика"
+                                       FontSize="20"
+                                       FontWeight="Bold"
+                                       Foreground="#243B55"
+                                       Margin="0,0,0,12"/>
+
+                            <TextBlock x:Name="StatsText"
+                                       FontSize="17"
+                                       Foreground="#1E2837"
+                                       TextWrapping="Wrap"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Background="White"
+                            CornerRadius="14"
+                            Padding="22"
+                            Margin="0,0,0,25">
+                        <StackPanel>
+                            <TextBlock Text="Текущая кастомизация"
+                                       FontSize="20"
+                                       FontWeight="Bold"
+                                       Foreground="#243B55"
+                                       Margin="0,0,0,12"/>
+
+                            <TextBlock x:Name="CustomizationText"
+                                       FontSize="17"
+                                       Foreground="#1E2837"
+                                       TextWrapping="Wrap"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Button Content="Назад в главное меню"
+                            Height="46"
+                            Click="Back_Click"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </ScrollViewer>
+</Page>

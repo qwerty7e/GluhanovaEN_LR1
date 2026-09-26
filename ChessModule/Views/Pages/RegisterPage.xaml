@@ -1,0 +1,62 @@
+﻿<Page x:Class="ChessModule.Windows.RegisterPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Background="#EAF1F8">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid x:Name="RootGrid" MinHeight="650" Background="#EAF1F8">
+
+            <Border Width="450"
+                    Padding="35"
+                    CornerRadius="24"
+                    Background="#D7E3F1"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+
+                <StackPanel>
+                    <TextBlock Text="Регистрация"
+                               FontSize="30"
+                               FontWeight="Bold"
+                               Foreground="#243B55"
+                               HorizontalAlignment="Center"
+                               Margin="0,0,0,8"/>
+
+                    <TextBlock Text="Создание профиля игрока"
+                               FontSize="16"
+                               Foreground="#243B55"
+                               HorizontalAlignment="Center"
+                               Margin="0,0,0,28"/>
+
+                    <TextBlock Text="Логин"
+                               FontSize="16"
+                               Foreground="#243B55"/>
+
+                    <TextBox x:Name="LoginBox"
+                             Height="40"
+                             FontSize="16"
+                             Margin="0,6,0,18"/>
+
+                    <TextBlock Text="Пароль"
+                               FontSize="16"
+                               Foreground="#243B55"/>
+
+                    <PasswordBox x:Name="PasswordBox"
+                                 Height="40"
+                                 FontSize="16"
+                                 Margin="0,6,0,24"/>
+
+                    <Button Content="Создать аккаунт"
+                            Height="44"
+                            FontSize="16"
+                            Click="Register_Click"/>
+
+                    <Button Content="Назад ко входу"
+                            Height="44"
+                            FontSize="16"
+                            Margin="0,12,0,0"
+                            Click="Back_Click"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </ScrollViewer>
+</Page>

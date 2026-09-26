@@ -1,0 +1,52 @@
+﻿<Page x:Class="ChessModule.Windows.SettingsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Background="#EAF1F8">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid x:Name="RootGrid" MinHeight="720" Margin="30">
+            <Border Background="#D7E3F1"
+                    CornerRadius="24"
+                    Padding="35"
+                    Width="620"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+
+                <StackPanel>
+                    <TextBlock Text="Настройки"
+                               FontSize="34"
+                               FontWeight="Bold"
+                               Foreground="#243B55"
+                               HorizontalAlignment="Center"
+                               Margin="0,0,0,30"/>
+
+                    <CheckBox x:Name="MusicCheck"
+                              Content="Музыка"
+                              FontSize="18"
+                              Margin="0,10"/>
+
+                    <CheckBox x:Name="EffectsCheck"
+                              Content="Звуковые эффекты"
+                              FontSize="18"
+                              Margin="0,10"/>
+
+                    <CheckBox x:Name="CoordinatesCheck" 
+                              Content="Показывать координаты клеток" 
+                              FontSize="18" 
+                              Margin="0,10"/>
+
+
+                    <Button Content="Сохранить"
+                            Height="46"
+                            Margin="0,30,0,0"
+                            Click="Save_Click"/>
+
+                    <Button Content="Назад"
+                            Height="46"
+                            Margin="0,10,0,0"
+                            Click="Close_Click"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </ScrollViewer>
+</Page>

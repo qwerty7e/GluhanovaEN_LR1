@@ -1,0 +1,58 @@
+﻿<Window x:Class="ChessModule.Windows.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Авторизация"
+        MinWidth="900"
+        MinHeight="650"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized"
+        ResizeMode="CanResize">
+
+    <Grid x:Name="RootGrid" Background="#EAF1F8">
+        <Border Width="430"
+                Padding="35"
+                CornerRadius="24"
+                Background="#D7E3F1"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center">
+
+            <StackPanel>
+                <TextBlock Text="Вход в систему"
+                           FontSize="30"
+                           FontWeight="Bold"
+                           Foreground="#243B55"
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,30"/>
+
+                <TextBlock Text="Логин"
+                           FontSize="16"
+                           Foreground="#243B55"/>
+
+                <TextBox x:Name="LoginBox"
+                         Height="40"
+                         FontSize="16"
+                         Margin="0,6,0,18"/>
+
+                <TextBlock Text="Пароль"
+                           FontSize="16"
+                           Foreground="#243B55"/>
+
+                <PasswordBox x:Name="PasswordBox"
+                             Height="40"
+                             FontSize="16"
+                             Margin="0,6,0,24"/>
+
+                <Button Content="Войти"
+                        Height="44"
+                        FontSize="16"
+                        Click="Login_Click"/>
+
+                <Button Content="Регистрация"
+                        Height="44"
+                        FontSize="16"
+                        Margin="0,12,0,0"
+                        Click="Register_Click"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

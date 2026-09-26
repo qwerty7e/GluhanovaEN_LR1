@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f6a29589c8ce4992a8436d570e21b0f9" Name="Diagram1" ZoomLevel="18">
+        <EntityTypeShape EntityType="ChessProfileModel.Achievement" Width="1.5" PointX="0.75" PointY="12.625" />
+        <EntityTypeShape EntityType="ChessProfileModel.GameHistory" Width="1.5" PointX="3" PointY="14.875" />
+        <EntityTypeShape EntityType="ChessProfileModel.Reward" Width="1.5" PointX="3.75" PointY="1" />
+        <EntityTypeShape EntityType="ChessProfileModel.SavedGame" Width="1.5" PointX="3" PointY="4.625" />
+        <EntityTypeShape EntityType="ChessProfileModel.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="ChessProfileModel.UserAchievement" Width="1.5" PointX="3" PointY="9.875" />
+        <EntityTypeShape EntityType="ChessProfileModel.UserReward" Width="1.5" PointX="6" PointY="8.875" />
+        <EntityTypeShape EntityType="ChessProfileModel.User" Width="1.5" PointX="0.75" PointY="8.25" />
+        <EntityTypeShape EntityType="ChessProfileModel.UserSetting" Width="1.5" PointX="3" PointY="19" />
+        <AssociationConnector Association="ChessProfileModel.FK_UserAchievements_Achievements" />
+        <AssociationConnector Association="ChessProfileModel.FK_GameHistory_Users" />
+        <AssociationConnector Association="ChessProfileModel.FK_UserRewards_Rewards" />
+        <AssociationConnector Association="ChessProfileModel.FK_SavedGames_Users" />
+        <AssociationConnector Association="ChessProfileModel.FK_UserAchievements_Users" />
+        <AssociationConnector Association="ChessProfileModel.FK_UserRewards_Users" />
+        <AssociationConnector Association="ChessProfileModel.FK_UserSettings_Users" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
